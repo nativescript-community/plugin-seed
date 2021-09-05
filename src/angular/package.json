@@ -11,7 +11,7 @@
                 "@nativescript-community/plugin-seed": "ns-plugin-seed"
             }
         },
-        "whitelistedNonPeerDependencies": [
+        "allowedNonPeerDependencies": [
             "."
         ]
     }

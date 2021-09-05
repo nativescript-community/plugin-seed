@@ -88,6 +88,9 @@ The `demo-snippets` directory contains the specific demo code for the plugin. Ea
 
 There is also a `package.json` inside the `demo-snippets` directory. This allows you to add (or modify) any dependencies you need to be added to the demos.
 
+### Modifying App_Resources
+
+You can add/overwrite files for each demo's `App_Resources` by adding the modifications to the `demo-snippets/App_Resources` directory. These files will be copied over to the correct location when a demo is ran. (Use `ns clean` before running a demo to force-sync the `App_Resources` directory).
 ## Tools
 
 There is a linked submodule called `tools`. This contains utility scripts that can be ran on the plugin. 
