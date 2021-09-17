@@ -25,7 +25,7 @@
         "demo.svelte.ios": "cd ./demo-svelte && ns run ios --no-hmr",
         "demo.vue.android": "cd ./demo-vue && ns run android --no-hmr",
         "demo.vue.ios": "cd ./demo-vue && ns run ios --no-hmr",
-        "publish": "npm run setup && npm run build && lerna publish --create-release=github --force-publish",
+        "publish": "npm run setup && npm run build.all && lerna publish --create-release=github --force-publish",
         "postinstall": "npm run setup",
         "setup": "npm run submodules && ts-patch install",
         "start": "./node_modules/.bin/ntl -A -s 15 -o",
