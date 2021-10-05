@@ -1,0 +1,13 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "../../src/plugin-seed",
+        "outDir": "./",
+        "paths": {
+            "tns-core-modules": ["./node_modules/@nativescript/core"],
+            "tns-core-modules/*": ["./node_modules/@nativescript/core/*"]
+        }
+    },
+    "include": ["../../src/plugin-seed/**/*.ts", "../../references.d.ts", "../../src/references.d.ts"],
+    "exclude": ["../../src/plugin-seed/angular/**"]
+}

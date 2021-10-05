@@ -2,7 +2,7 @@
     "name": "@nativescript-community/plugin-seed-angular",
     "main": "index.js",
     "ngPackage": {
-        "dest": "../../plugin/angular",
+        "dest": "../../../packages/plugin-seed/angular",
         "lib": {
             "entryFile": "index.ts",
             "umdModuleIds": {

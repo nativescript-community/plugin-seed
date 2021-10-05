@@ -20,6 +20,6 @@ export class VersionNumber extends VersionNumberCommon {
     getVersion() {
         const PackageManager = android.content.pm.PackageManager;
         const pkg = Application.android.context.getPackageManager().getPackageInfo(Application.android.context.getPackageName(), PackageManager.GET_META_DATA);
-        return pkg.versionName + " bla bla";
+        return pkg.versionName;
     }
 }
