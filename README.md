@@ -51,6 +51,24 @@ npm run demo.[ng|react|svelte|vue].[ios|android]
 npm run demo.svelte.ios
 ```
 
+### Plugin Config
+
+There is a plugin config file called `config.json` which allows you to specify what demos are supported for the plugin as well as if Angular building is enabled.
+
+Example of plugin config:
+
+```json
+{
+    "angular": true,
+    "demos": [
+        "ng",
+        "react",
+        "svelte",
+        "vue"
+    ]
+}
+```
+
 ### Automatic Redirect
 In some cases, you might want to be redirected to a specific demo every time the app starts. This can be done by adding a `--env.redirect=[demo_name]` to the run demo command.
 
@@ -65,6 +83,7 @@ export const demos = [
 ];
 ```
 This means you can set `[demo_name]` to `demo1`, `demo2`, or `development`.
+
 ## Demos
 
 ### Structure
@@ -91,6 +110,11 @@ There is also a `package.json` inside the `demo-snippets` directory. This allows
 ### Modifying App_Resources
 
 You can add/overwrite files for each demo's `App_Resources` by adding the modifications to the `demo-snippets/App_Resources` directory. These files will be copied over to the correct location when a demo is ran. (Use `ns clean` before running a demo to force-sync the `App_Resources` directory).
+
+### Shared Assets
+
+There is the ability to share assets across all of the demos. Simply create a directory called `assets` in the `demo-snippets` directory and its contents will be copied into the built app and be available by using a `~/`. Look at Demo 2 for a simple example of this.
+
 ## Tools
 
 There is a linked submodule called `tools`. This contains utility scripts that can be ran on the plugin. 

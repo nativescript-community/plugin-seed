@@ -7,6 +7,8 @@
 
         <StackLayout>
             <Label text="This is the second demo..." />
+            <Label text="This image is from the shared assets directory." />
+            <Image src="~/image.png"></Image>
         </StackLayout>
     </Page>
 </template>
