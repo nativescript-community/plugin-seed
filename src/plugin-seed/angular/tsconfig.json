@@ -5,7 +5,7 @@
         "plugins": [],
         "paths": {
             "@nativescript-community/plugin-seed": ["packages/plugin-seed"],
-            "@nativescript-community/plugin-seed/": ["packages/plugin-seed/"]
+            "@nativescript-community/plugin-seed/*": ["packages/plugin-seed/*"]
         }
     },
     "include": ["./**/*.ts", "../../../references.d.ts", "../references.d.ts"],
