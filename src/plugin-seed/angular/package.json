@@ -1,18 +1,4 @@
 {
     "name": "@nativescript-community/plugin-seed-angular",
-    "main": "index.js",
-    "ngPackage": {
-        "dest": "../../../packages/plugin-seed/angular",
-        "lib": {
-            "entryFile": "index.ts",
-            "umdModuleIds": {
-                "@nativescript/core": "ns-core",
-                "@nativescript/angular": "ns-angular",
-                "@nativescript-community/plugin-seed": "ns-plugin-seed"
-            }
-        },
-        "allowedNonPeerDependencies": [
-            "."
-        ]
-    }
+    "main": "index.js"
 }

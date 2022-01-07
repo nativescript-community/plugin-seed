@@ -2,11 +2,8 @@
     "extends": "./tools/tsconfig",
     "compilerOptions": {
         "paths": {
-            "tns-core-modules": ["./node_modules/@nativescript/core"],
-            "tns-core-modules/*": ["./node_modules/@nativescript/core/*"],
             "@nativescript-community/plugin-seed": ["src/plugin-seed"],
-            "@nativescript-community/plugin-seed/*": ["src/plugin-seed/*"],
-            "*": ["node_modules/*"]
+            "@nativescript-community/plugin-seed/*": ["src/plugin-seed/*"]
        },
     }
 }
