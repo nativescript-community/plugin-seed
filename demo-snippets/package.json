@@ -3,5 +3,11 @@
     "version": "0.0.1",
     "dependencies": {
         "@nativescript-community/plugin-seed": "file:../packages/plugin-seed"
+    },
+    "nativescript": {
+        "platforms": {
+            "android": "*",
+            "ios": "*"
+        }
     }
 }
